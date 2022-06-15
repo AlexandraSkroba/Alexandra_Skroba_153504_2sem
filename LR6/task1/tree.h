@@ -1,4 +1,4 @@
-#ifndef TREE_H
+#ifndef TREE_H //предотвращает попытку многократного включения заголовочных файлов
 #define TREE_H
 
 #pragma once //препроцессорная директива, исходный файл при компиляции подключался строго один раз
@@ -26,9 +26,9 @@ public:
     };
 
 
-    int k=0;
-    QString G;
-    QVector<std::pair<int,QString>> V;
+    int k = 0; //счетчик для симметричного обхода
+    QString G; //показ дерева
+    QVector<std::pair<int,QString>> V; //обход предв.
 
     Node* newNode(int key, T data = T())
     {
@@ -54,7 +54,7 @@ public:
             return 0;
         }
         return node->height;
-    }
+    }// определение класса
 
      /* Правый поворот */
     Node* rightRotate(Node* y)
@@ -387,3 +387,4 @@ public:
 };
 
 #endif // TREE_H
+// определение класса

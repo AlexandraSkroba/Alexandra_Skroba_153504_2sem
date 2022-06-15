@@ -22,7 +22,7 @@ MainWindow::MainWindow(QWidget *parent)
 
     ui->spinBox->setRange(INT_MIN,INT_MAX);
 
-    ui->comboBox->addItems(QStringList() << "Pre-order" << "In-order" << "Post-order" << "breadth-first search");
+    ui->comboBox->addItems(QStringList() << "Pre-order" << "In-order" << "Post-order" << "Breadth-first search");
 
 }
 

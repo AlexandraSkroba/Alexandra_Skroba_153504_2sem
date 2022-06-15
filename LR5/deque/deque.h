@@ -11,7 +11,7 @@ private:
 	size_t sub_top_index;
 	size_t sub_bottom_index;
 
-	void addMemory() {
+    void addMemory() {
 		this->cup *= 3;
 		int k = top_index;
 		size_t tmp = bottom_index - top_index;
@@ -19,7 +19,6 @@ private:
 		bottom_index = top_index + tmp;
 		T** newArr = new T * [cup];
 		for (int i = top_index; i <= bottom_index; i++) {
-			//newArr[i] = arr[k];
 		placement: new(newArr + i)T* (arr[k]);
 			k++;
 		}
@@ -38,7 +37,6 @@ public:
 		for (int i = top_index; i <= bottom_index; i++) {
 			T* sub_arr = new T[10];
 		placement: new(arr + i)T* (sub_arr);
-			//arr[i] = sub_arr;
 		}
 	}
 

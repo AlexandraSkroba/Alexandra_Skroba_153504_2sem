@@ -3,7 +3,7 @@
 
 #include <QMainWindow>
 #include <QGraphicsScene>
-#include "../../LABA-5-main/deque/deque.h"
+#include "../../LR5/deque/deque.h"
 #include <QMessageBox>
 
 QT_BEGIN_NAMESPACE
